@@ -1,30 +1,34 @@
 'use strict';
 
-const credits = 23580;
-const pricePerDroid = 3000;
-let inputMessage;
-let message;
+export function task_04() {
 
-inputMessage = prompt('Сколько дроидов Вы хотите преобрести?');
+    const credits = 23580;
+    const pricePerDroid = 3000;
+    let inputMessage;
+    let message;
 
-const totalPrice = inputMessage * pricePerDroid;
-const balans = credits - totalPrice;
+    inputMessage = prompt('Сколько дроидов Вы хотите преобрести?');
 
-if (totalPrice <= credits) {
+    const totalPrice = inputMessage * pricePerDroid;
+    const balans = credits - totalPrice;
 
-    alert(`Вы купили ${inputMessage} дроидов, на счету осталось ${balans} кредитов.`);
-    alert(`Вы потратились на сумму ${totalPrice} кредитов. Спасибо за покупку!`);
+    if (totalPrice <= credits) {
 
-} else if (inputMessage === '') {
+        alert(`Вы купили ${inputMessage} дроидов, на счету осталось ${balans} кредитов.`);
+        alert(`Вы потратились на сумму ${totalPrice} кредитов. Спасибо за покупку!`);
 
-    message = 'Не указано количество товара!';
+    } else if (inputMessage === '') {
 
-} else if (inputMessage === false) {
+        message = 'Не указано количество товара!';
 
-    message = 'Отменено пользователем!';
+    } else if (inputMessage === false) {
 
-} else
+        message = 'Отменено пользователем!';
 
-    message = 'Недостаточно средств на счету!';
+    } else
 
-console.log(message);
+        message = 'Недостаточно средств на счету!';
+
+    console.log(message);
+
+}

@@ -1,17 +1,21 @@
 'use strict';
 
-const total = 100; //количество товара на складе
-const ordered = 50; //единицы товара на складе
-let value;
+export function task_02() {
 
-if (total <= ordered) {
+    const total = 100; //количество товара на складе
+    const ordered = 50; //единицы товара на складе
+    let value;
 
-    value = 'На складе недостаточно тваров!';
+    if (total <= ordered) {
 
-} else {
+        value = 'На складе недостаточно тваров!';
 
-    value = ('Заказ оформлен, с вами свяжется менеджер');
+    } else {
+
+        value = ('Заказ оформлен, с вами свяжется менеджер');
+
+    }
+
+    console.log(value);
 
 }
-
-console.log(value);

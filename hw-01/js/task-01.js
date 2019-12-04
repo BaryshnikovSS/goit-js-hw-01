@@ -1,11 +1,15 @@
 'use strict';
 
-const name = 'Генератор защитного поля';
+export function task_01() {
 
-let price = 1000;
-let message = `Выбран «${name}», цена за штуку ${price} кредитов`;
-console.log(message);
+    const name = 'Генератор защитного поля';
 
-price = 2000;
-message = `Выбран «${name}», цена за штуку ${price} кредитов`;
-console.log(message);
+    let price = 1000;
+    let message = `Выбран «${name}», цена за штуку ${price} кредитов`;
+    console.log(message);
+
+    price = 2000;
+    message = `Выбран «${name}», цена за штуку ${price} кредитов`;
+    console.log(message);
+
+}

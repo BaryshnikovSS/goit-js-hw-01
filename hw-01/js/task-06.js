@@ -1,35 +1,39 @@
 'use strict';
 
-let inputMessage;
-let total = 0;
-let numOfIteration = 0;
+export function task_06() {
 
-do {
+    let inputMessage;
+    let total = 0;
+    let numOfIteration = 0;
 
-    inputMessage = prompt('Введите число!');
+    do {
 
-    if (inputMessage === null) {
+        inputMessage = prompt('Введите число!');
 
-        break;
+        if (inputMessage === null) {
 
-    }
+            break;
 
-    if (!isNaN(Number(inputMessage))) {
+        }
 
-        total += Number(inputMessage);
-        numOfIteration++;
+        if (!isNaN(Number(inputMessage))) {
 
-    } else {
+            total += Number(inputMessage);
+            numOfIteration++;
 
-        alert('Было введено не число, попробуйте еще раз');
+        } else {
 
-    }
+            alert('Было введено не число, попробуйте еще раз');
 
-} while (true)
+        }
 
-console.log('Number of iterations:', numOfIteration);
+    } while (true)
 
-alert(`Общая сумма чисел равна ${total}`);
+    console.log('Number of iterations:', numOfIteration);
+
+    alert(`Общая сумма чисел равна ${total}`);
+
+}
 
 //======================================================
 

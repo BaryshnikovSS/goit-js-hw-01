@@ -1,23 +1,27 @@
 'use strict';
 
-const ADMIN_PASSWORD = 'jqueryismyjam';
-let message;
-let result;
+export function task_03() {
 
-result = prompt('Пожалуйста введите пароль!');
+    const ADMIN_PASSWORD = 'jqueryismyjam';
+    let message;
+    let result;
 
-if (result === null) {
+    result = prompt('Пожалуйста введите пароль!');
 
-    message = 'Отменено пользователем!';
+    if (result === null) {
 
-} else if (result === ADMIN_PASSWORD) {
+        message = 'Отменено пользователем!';
 
-    message = 'Добро пожаловать!';
+    } else if (result === ADMIN_PASSWORD) {
 
-} else {
+        message = 'Добро пожаловать!';
 
-    message = 'Доступ запрещен, неверный пароль!';
+    } else {
+
+        message = 'Доступ запрещен, неверный пароль!';
+
+    }
+
+    alert(message);
 
 }
-
-alert(message);
